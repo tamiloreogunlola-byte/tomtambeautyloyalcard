@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | TomTam Rewards</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="dashboard">
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <div class="brand-mark">T</div>
+          <div class="brand-name">TOMTAM</div>
+        </div>
+
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="#dashboard">My rewards</a>
+          <a href="#referrals">Referrals</a>
+          <a href="#support">Support</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="btn secondary" href="index.html">Log out</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container dashboard-page">
+      <div class="user-header">
+        <h1 id="welcomeMessage">Welcome back</h1>
+        <span class="mini-pill">Member active</span>
+      </div>
+
+      <div class="dashboard-grid">
+        <div class="profile-card">
+          <div class="profile-top">
+            <div>
+              <div class="profile-name">TOMTAM</div>
+              <div class="profile-sub">Beauty Store</div>
+            </div>
+            <div class="profile-spark"></div>
+          </div>
+
+          <div class="profile-message">Hello, Beauty! <span class="heart">♥</span></div>
+          <div class="profile-message" style="margin-top: 8px; font-size: 1.2rem; font-weight: 700; color: rgba(90, 38, 53, 0.85);">Beauty. Confidence. You.</div>
+
+          <div class="profile-stamps">
+            <span class="filled">✓</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+          </div>
+
+          <div class="reward-banner">
+            <strong>5 STAMPS = 5% REFERRAL REWARD</strong>
+            <span>Your referral reward is issued only after a confirmed purchase.</span>
+          </div>
+        </div>
+
+        <div class="ref-card" id="referrals">
+          <h3>Referral tracker</h3>
+
+          <div class="ref-link-row">
+            <input id="referralLink" type="text" value="https://tomtambeautystore.netlify.app/?ref=yourcode" readonly />
+            <button class="copy-btn" id="copyButton" type="button">Copy</button>
+          </div>
+
+          <div class="ref-code-block">
+            Referral code: <strong id="referralCodeValue">TT-USER-0000</strong>
+          </div>
+
+          <a class="mini-btn green" href="https://tomtambeautystore.netlify.app" target="_blank" rel="noopener" style="display:inline-block; margin-bottom:16px; text-decoration:none;">Shop to activate referral</a>
+
+          <div class="invite-list" id="inviteList"></div>
+        </div>
+      </div>
+
+      <div class="summary-card" style="margin-top: 22px;">
+        <h3>Overview</h3>
+        <div class="summary-grid">
+          <div class="summary-box">
+            <strong id="stampSummary">1</strong>
+            <span>stamps</span>
+          </div>
+          <div class="summary-box">
+            <strong id="refSummary">0</strong>
+            <span>confirmed referrals</span>
+          </div>
+          <div class="summary-box">
+            <strong id="statusSummary">Open</strong>
+            <span>reward status</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <span>© 2026 TomTam</span>
+        <span>Beauty. Confidence. You.</span>
+      </div>
+      <div class="container" style="margin-top:12px;">
+        <a class="whatsapp-btn" href="https://wa.me/2349052649316?text=Hi%20TomTam%20Beauty%20Store%2C%20I%20want%20more%20information." target="_blank" rel="noopener">WhatsApp us</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

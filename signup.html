@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create account | TomTam Rewards</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="auth-shell">
+      <div class="auth-panel">
+        <div class="auth-side">
+          <h2>Beauty. Confidence. You.</h2>
+          <p>
+            Join the TomTam loyalty community and start collecting rewards with every beauty purchase.
+            Your points, card, and referral link will be ready as soon as you sign up.
+          </p>
+
+          <div class="card-showcase">
+            <div class="title">Member perks</div>
+            <div class="name">Rewards</div>
+            <div class="note">Track points and invite friends</div>
+            <div class="count">
+              <span class="filled">✓</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="auth-form">
+          <h3 class="form-title">Create account</h3>
+
+          <form id="signUpForm">
+            <div class="form-grid">
+              <div class="field-block">
+                <label for="firstName">First name</label>
+                <input id="firstName" type="text" placeholder="Aisha" required />
+              </div>
+
+              <div class="field-block">
+                <label for="lastName">Last name</label>
+                <input id="lastName" type="text" placeholder="Johnson" required />
+              </div>
+
+              <div class="field-block full-width">
+                <label for="username">Username</label>
+                <input id="username" type="text" placeholder="aisha_tomtam" required />
+              </div>
+
+              <div class="field-block full-width">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="you@example.com" required />
+              </div>
+
+              <div class="field-block full-width">
+                <label for="phone">Phone number</label>
+                <input id="phone" type="tel" placeholder="080 123 4567" required />
+              </div>
+
+              <div class="field-block full-width">
+                <label for="referralCode">Referral code (optional)</label>
+                <input id="referralCode" type="text" placeholder="Enter a referral code if someone invited you" />
+              </div>
+
+              <div class="field-block full-width">
+                <label for="password">Password</label>
+                <div class="password-wrap">
+                  <input id="password" type="password" placeholder="Create a password" required />
+                  <button type="button" class="toggle-password" aria-label="Show password">Show</button>
+                </div>
+              </div>
+            </div>
+
+            <label class="inline-check">
+              <input type="checkbox" required /> I agree to the terms and privacy policy
+            </label>
+
+            <button class="auth-submit" type="submit">Create my account</button>
+          </form>
+
+          <div class="switch-copy">Already have an account? <a href="signin.html">Sign in</a></div>
+          <div style="margin-top: 18px;">
+            <a class="btn primary full" href="https://tomtambeautystore.netlify.app" target="_blank" rel="noopener">Shop now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
